@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>합정 클럽 룩북 – 정보</title>
+    <meta name="description" content="합정 클럽 룩북. 스위스 미니멀 에디션. 단색의 질서. 클럽 패션의 기준을 다시 쓴다. 010-6279-0862">
+    <meta name="keywords" content="합정 클럽 룩북, 합정 클럽, 클럽 룩북, 합정, 클럽 패션, 스트릿 룩, club lookbook, Swiss minimal, 단색 룩, 정보">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <link rel="canonical" href="https://t3b07-hj-club-look.vercel.app/info">
+    <meta property="og:title" content="합정 클럽 룩북 – 정보 | 스위스 미니멀 에디션">
+    <meta property="og:description" content="합정 클럽 룩북. 단색의 힘. 클럽 패션의 경계를 부수다. 010-6279-0862">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* ===== RESET & BASE ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #000; color: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased;
+        }
+        a { color: inherit; text-decoration: none; }
+        img, svg { max-width: 100%; display: block; }
+        ul { list-style: none; }
+        /* ===== CONTAINER ===== */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        @media (min-width: 768px) { .container { padding: 0 40px; } }
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
+        h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 1rem; }
+        h2 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.75rem; }
+        h3 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; }
+        .small { font-size: 0.875rem; opacity: 0.7; }
+        /* ===== NAV ===== */
+        .nav-present { 
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+            background: rgba(0,0,0,0.95); border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 1rem 0;
+        }
+        .nav-present .container { display: flex; justify-content: space-between; align-items: center; }
+        .nav-present .logo { font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; }
+        .nav-present .logo span { color: #888; }
+        .hamburger-menu { display: none; cursor: pointer; }
+        .hamburger-menu span { display: block; width: 24px; height: 2px; background: #fff; margin: 6px 0; transition: 0.3s; }
+        .nav-present ul { display: flex; gap: 2rem; }
+        .nav-present ul li a { font-size: 0.9rem; opacity: 0.8; transition: opacity 0.2s; }
+        .nav-present ul li a:hover { opacity: 1; }
+        .tel-link { 
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1rem; border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 4px; font-size: 0.9rem; transition: 0.2s;
+        }
+        .tel-link:hover { border-color: #fff; background: rgba(255,255,255,0.05); }
+        @media (max-width: 767px) {
+            .hamburger-menu { display: block; }
+            .nav-present ul { 
+                display: none; position: absolute; top: 100%; left: 0; width: 100%;
+                background: #000; flex-direction: column; padding: 1rem 0; gap: 0;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+            .nav-present ul.open { display: flex; }
+            .nav-present ul li { text-align: center; padding: 0.75rem 0; }
+            .tel-link { margin: 0.5rem auto; }
+        }
+        /* ===== HERO ===== */
+        .hero { padding: 8rem 0 4rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .hero h1 { font-size: 2.5rem; }
+        .hero p { font-size: 1.2rem; opacity: 0.8; max-width: 600px; }
+        @media (min-width: 768px) { .hero h1 { font-size: 4rem; } }
+        /* ===== SECTION ===== */
+        section { padding: 4rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .grid-2 { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        @media (min-width: 768px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+        .card { 
+            padding: 2rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;
+            transition: 0.3s;
+        }
+        .card:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.02); }
+        .card h3 { margin-bottom: 1rem; }
+        .card p { opacity: 0.8; }
+        .stat { font-size: 3rem; font-weight: 700; line-height: 1; margin-bottom: 0.5rem; }
+        /* ===== FAQ ===== */
+        .faq-item { padding: 1.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item h4 { cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-item h4::after { content: '+'; font-size: 1.5rem; opacity: 0.5; }
+        .faq-item p { margin-top: 0.75rem; opacity: 0.7; display: none; }
+        .faq-item.active p { display: block; }
+        /* ===== FOOTER ===== */
+        footer { padding: 3rem 0; text-align: center; opacity: 0.5; font-size: 0.85rem; }
+        /* ===== RESPONSIVE 768 ===== */
+        @media (min-width: 768px) {
+            .responsive-768 .grid-2 { gap: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-present">
+        <div class="container">
+            <a href="/" class="logo">합정<span>클럽룩북</span></a>
+            <div class="hamburger-menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-present ul').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/lookbook">룩북</a></li>
+                <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>합정 클럽 룩북<br>정보 &amp; 비전</h1>
+            <p>단색이 말하는 법. 클럽 패션의 위선을 깨부순다. 스위스 미니멀은 타협하지 않는다.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>왜 합정인가</h2>
+            <p>합정은 가짜 힙스터들의 놀이터가 아니다. 진짜 언더그라운드는 여기서 숨 쉰다. 클럽 룩북은 그 현장을 기록한다. 스트릿의 날것, 단색의 절대성. 너가 입는 옷은 너를 말해주는가, 아니면 숨기는가?</p>
+            <div class="grid-2 responsive-768" style="margin-top: 2rem;">
+                <div class="card">
+                    <div class="stat">2019</div>
+                    <h3>설립</h3>
+                    <p>합정 클럽 씬의 재정의. 미니멀리즘으로 시작된 폭발.</p>
+                </div>
+                <div class="card">
+                    <div class="stat">47</div>
+                    <h3>에디션</h3>
+                    <p>스위스 미니멀 에디션을 포함한 모든 룩북. 단색의 진화.</p>
+                </div>
+                <div class="card">
+                    <div class="stat">100%</div>
+                    <h3>로컬</h3>
+                    <p>합정에서만 촬영. 합정 크루만 참여. 위선은 없다.</p>
+                </div>
+                <div class="card">
+                    <div class="stat">1</div>
+                    <h3>룰</h3>
+                    <p>단색만 입는다. 패턴은 약자의 변명이다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>스위스 미니멀 에디션</h2>
+            <p>스위스는 중립이 아니다. 스위스 미니멀은 선택이다. 모든 색을 버리고 흑백의 극한으로. 클럽 패션은 더 이상 화려함으로 승부하지 않는다. 존재 자체로 말한다.</p>
+            <p style="margin-top: 1rem; font-weight: 700;">"단색은 가장 강력한 항의다."</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>자주 묻는 질문</h2>
+            <div class="faq-item active">
+                <h4>합정 클럽 룩북은 누구를 위한 것인가?</h4>
+                <p>진짜를 원하는 사람들. 가짜 룩, 가짜 스트릿은 거른다. 합정에서 진짜 클럽 패션을 경험한 이들을 위한 아카이브.</p>
+            </div>
+            <div class="faq-item">
+                <h4>스위스 미니멀 에디션의 의미는?</h4>
+                <p>스위스는 정밀함이다. 미니멀은 불필요를 제거하는 것. 합정 클럽 씬에서 가장 날카로운 단색의 결정체.</p>
+            </div>
+            <div class="faq-item">
+                <h4>참여하려면 어떻게 하나요?</h4>
+                <p>합정에서 클럽을 즐기고, 단색 룩을 입는다. 그게 전부다. 문의는 010-6279-0862.</p>
+            </div>
+            <div class="faq-item">
+                <h4>왜 전화 문의만 받나요?</h4>
+                <p>디지털 노이즈는 필요 없다. 진짜 관심 있는 사람만 전화해라. 메시지는 약하다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>지역 시그널</h2>
+            <p>합정, 홍대, 상수 — 이 트라이앵글은 한국 클럽 문화의 심장이다. 우리는 여기서 호흡한다. 클럽 룩북은 그 에너지를 단색으로 압축한다. 다른 동네는 따라올 수 없는 무게.</p>
+            <div class="grid-2 responsive-768" style="margin-top: 2rem;">
+                <div class="card">
+                    <h3>합정</h3>
+                    <p>언더그라운드의 진원지. 클럽 룩북의 본거지.</p>
+                </div>
+                <div class="card">
+                    <h3>홍대</h3>
+                    <p>스트릿 문화의 교집합. 하지만 진짜는 합정에서 시작된다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 합정 클럽 룩북 — 스위스 미니멀 에디션. 단색은 끝나지 않는다.</p>
+            <p class="small">문의: 010-6279-0862</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle
+        document.querySelectorAll('.faq-item h4').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+        // Hamburger menu toggle
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-present ul').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
